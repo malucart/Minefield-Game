@@ -6,7 +6,7 @@
 using namespace std;
 
 const int MAX = 100;
-//funções
+//funÃ§Ãµes
 void Campo_Inicial(char M[][MAX], int linhas, int colunas)
 {
     for (int i = 0; i < linhas; i++)
@@ -69,10 +69,10 @@ int main ()
     arquivotxt.open("arquivo.txt");
     //Aleatoriedade
     srand (time(NULL));
-    //Declaração de variaveis relacionadas ao tempo
+    //DeclaraÃ§Ã£o de variaveis relacionadas ao tempo
     clock_t inicio, fim;
     double tempo;
-    //Declaração de variaveis
+    //DeclaraÃ§Ã£o de variaveis
     char Matriz[MAX][MAX], Aux[MAX][MAX];
     int horizontal, vertical;
     int minas, x, y;
@@ -80,7 +80,7 @@ int main ()
 
     cout << "Escolha como quer jogar: \n (1) Jogador \n (2) Jogadores \n (3) Jogo por leitura TXT \n";
     cin >> opcao;
-    //opções do usuario
+    //opÃ§Ãµes do usuario
     switch(opcao){
         case 1:
             horizontal = rand() % 20 + 1 ;
@@ -153,7 +153,7 @@ int main ()
             }
             break;
     }
-    //Declaração de variaveis
+    //DeclaraÃ§Ã£o de variaveis
     bool explodiu = false;
     char escolha;
     int tentativas = minas;
@@ -241,7 +241,7 @@ int main ()
     }
     else
         cout << "JOGADOR DESAFIANTE VENCEU! \n";
-    //Calculo e impressão do tempo total em segundos
+    //Calculo e impressÃ£o do tempo total em segundos
     tempo = (fim - inicio)/CLOCKS_PER_SEC;
     cout << "Tempo de conclusao: " << tempo << "s" << endl;
 
